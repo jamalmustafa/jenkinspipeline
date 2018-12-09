@@ -2,11 +2,12 @@ pipeline {
     agent any
     
 stages{
-
-		echo "Jamal ..."
+		
         stage('Build'){
             steps {
+				echo "Jamal ..."
 				sh 'mvn clean package'
+				echo "mvn"
             }
 			post {
 				success {
